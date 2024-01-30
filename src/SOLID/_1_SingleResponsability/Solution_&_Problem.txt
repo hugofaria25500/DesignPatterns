@@ -1,0 +1,17 @@
+*Problem Scenario:
+Imagine you are developing a class that is responsible for both processing orders and sending notifications to
+customers. The current implementation combines both responsibilities within a single class. This violates the SRP,
+making the class less maintainable and harder to extend. Additionally, if there is a change in one responsibility, it
+may affect the other, leading to code that is tightly coupled.
+
+*Solution:
+The Single Responsibility Principle suggests that a class or module should have only one reason to change.
+In other words, it should have a single responsibility or purpose. By adhering to SRP, each class or module becomes
+focused on a specific aspect of functionality. This results in code that is easier to comprehend, maintain, and extend.
+
+*Conclusion:
+Implementing the Single Responsibility Principle contributes to a more modular and scalable software architecture.
+It enhances code readability and maintainability, as each component is dedicated to a well-defined responsibility.
+This, in turn, facilitates easier testing and reduces the likelihood of unintended side effects when modifying the
+codebase. By adhering to SRP, developers can create more robust and flexible systems that are adaptable to changes in
+requirements while minimizing the risk of introducing bugs or breaking existing functionality.

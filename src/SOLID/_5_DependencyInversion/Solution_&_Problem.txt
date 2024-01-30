@@ -1,0 +1,20 @@
+*Problem Scenario:
+The Dependency Inversion Principle (DIP) addresses issues related to high-level modules depending on low-level
+modules and the direct coupling between them. In traditional systems, changes in low-level modules could have a
+significant impact on high-level modules, leading to inflexibility and difficulties in adapting to changes. This
+violates the idea that high-level modules should not be directly dependent on low-level modules.
+
+*Solution:
+The Dependency Inversion Principle proposes a solution by inverting the direction of dependency. High-level modules
+should not depend on low-level modules; instead, both should depend on abstractions (interfaces or abstract classes).
+This involves introducing an abstraction layer that defines the contracts or interfaces that high-level and low-level
+modules adhere to. This way, changes in the low-level modules do not directly affect high-level modules, promoting a
+more flexible and loosely coupled system.
+
+*Conclusion:
+By adhering to the Dependency Inversion Principle, software systems become more adaptable to change and easier to
+maintain. It promotes the use of abstractions, which act as a stable interface between different modules, reducing
+direct dependencies. This inversion of dependencies allows for the substitution of components without affecting the
+higher-level modules, making the system more extensible. DIP encourages the use of dependency injection and
+facilitates the creation of modular and testable code. Overall, it contributes to a more resilient and scalable
+architecture.
