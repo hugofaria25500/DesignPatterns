@@ -1,0 +1,21 @@
+*Problem Scenario:
+The Liskov Substitution Principle (LSP) addresses issues that arise when a derived class is not a true substitute for
+its base class. In such scenarios, substituting an object of the base class with an object of the derived class can
+lead to unexpected behavior, violating the expected contract. This undermines the polymorphic nature of object-oriented
+programming, making code less robust and more error-prone.
+
+*Solution:
+The Liskov Substitution Principle states that objects of a superclass should be replaceable with objects of its
+subclass without affecting the correctness of the program. The solution involves ensuring that the derived class
+adheres to the behavior expected from the base class. This requires maintaining the invariants and contracts
+established by the base class while allowing for additional behavior in the derived class. Violating LSP can lead to
+errors and unexpected behavior when substituting objects, so the solution involves careful design and adherence to the
+specified contracts.
+
+*Conclusion:
+By following the Liskov Substitution Principle, software systems become more reliable and predictable. It promotes a
+consistent and uniform interface across related classes, allowing objects to be used interchangeably without
+compromising the correctness of the program. Adhering to LSP contributes to code that is easier to understand,
+maintain, and extend. It fosters a strong foundation for polymorphism, enabling developers to create flexible and
+scalable systems where objects can be substituted seamlessly, promoting a more robust and cohesive object-oriented
+design.

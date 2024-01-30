@@ -1,0 +1,201 @@
+### SOLID ###
+
+#SINGLE RESPONSIBILITY PRINCIPLE:
+
+    the Single Responsibility Principle is essentially the idea that each class should have only the essential
+    responsibilities, meaning the separation of concerns. Each class should have only one.
+
+
+#OPEN CLOSED PRINCIPLE:
+
+    the Open-Closed Principle is essentially the idea that each class has its logic and code built in a way that it should
+    not be modified and, at the same time, be extendable for future implementations
+
+
+#LISKOV SUBSTITUTION PRINCIPLE:
+
+    the Liskov Substitution Principle is basically the fact that classes implement interfaces that make sense and fit
+    into the context
+
+
+#INTERFACE SEGREGATION PRINCIPLE:
+
+    the Interface Segregation Principle is basically, as the name suggests, the segregation of an interface into several
+    interfaces to make its implementation more flexible
+
+
+#DEPENDENCY INVERSION PRINCIPLE:
+
+    So, the Dependency Inversion Principle is basically the fact that high-level classes should not depend on low-level
+    classes because it hinders their flexibility
+
+
+#######################################################################
+
+
+### CREATIONAL DESIGN PATTERNS ###
+
+#BUILDER:
+
+     the Builder Design Pattern basically has a class that is responsible for constructing a product based on an
+     interface
+
+
+#SIMPLE FACTORY:
+
+    the Simple Factory basically has a factory class that designates what type of product we want based on a parameter
+
+
+#FACTORY METHOD:
+
+     the Factory Method Design Pattern basically involves having a factory class for each product that implements
+     a factory interface for that respective product
+
+
+#PROTOTYPE:
+
+    in the Prototype Design Pattern, basically, we have a product that implements a prototype interface, allowing us
+    to use the clone method, which returns a product that can be manipulated or even retain its respective properties
+
+
+#ABSTRACT FACTORY:
+
+    in the Abstract Factory Design Pattern, basically, it operates based on abstraction layers, in the sense that we
+    have product families that implement an interface, reducing the implementation to less specific products based
+    on an interface
+
+
+#SINGLETON:
+
+    in the Singleton Design Pattern, basically, we have a class responsible for creating and returning only one
+    and only one instance from a static field
+
+
+#OBJECT POOL:
+
+    in the Object Pool, basically, we have a class to store pre-defined objects that we reuse from a list of
+    objects (pool)
+
+
+#######################################################################
+
+
+### STRUCTURAL DESIGN PATTERNS ###
+
+#ADAPTER:
+
+    In the Adapter pattern, basically, we have a class that allows interaction between two incompatible interfaces,
+    adapting the behavior of one interface to meet the expectations of the other.
+
+
+#BRIDGE:
+
+    In the Bridge pattern, basically, we have the separation between an abstraction and the implementation,
+    allowing both to evolve independently of each other.
+
+
+#DECORATOR:
+
+    In the Decorator pattern, basically, we have the ability to add new responsibilities to an existing object
+    flexibly, without altering its basic structure.
+
+
+#COMPOSITE:
+
+    In the Composite pattern, basically, we have the composition of objects into a tree structure to represent a
+    hierarchical part-whole relationship, allowing clients to treat individual objects and compositions uniformly.
+
+
+#FACADE:
+
+    In the Facade pattern, basically, we have a class that provides a simplified interface for a more complex set
+    of classes, making it easier to use for external clients.
+
+#FLYWEIGHT:
+
+    In the Flyweight pattern, basically, we have the efficient sharing of objects to minimize memory overhead,
+    especially useful when dealing with a large number of similar objects.
+
+
+#PROXY:
+
+    In the Proxy pattern, basically, we have a class that acts as a substitute for another class, controlling access to
+    it and allowing the implementation of additional logic, such as permission checking or lazy loading.
+
+
+#######################################################################
+
+
+### BEHAVIORAL DESIGN PATTERNS ###
+
+#CHAIN OF RESPONSIBILITY:
+
+    In the Chain of Responsibility pattern, basically, we have a chain of handler objects, each having the ability
+    to process a request, and the request is passed along the chain until it is handled.
+
+
+#COMMAND:
+
+    In the Command pattern, basically, we have encapsulated requests as objects, allowing clients to parameterize
+    clients with queues, requests, and operations. This enables the support of undoable operations and decouples
+    the sender and receiver.
+
+#INTERPRETER:
+
+    In the Interpreter pattern, basically, we have a class hierarchy representing grammar rules, with
+    an interpreter for each rule to interpret sentences in a language.
+
+
+#MEDITOR:
+
+    In the Mediator pattern, basically, we have an object that centralizes communication between objects,
+    promoting loose coupling by preventing direct connections between components.
+
+
+#ITERATOR:
+
+    In the Iterator pattern, basically, we have a way to access elements of an aggregate object
+    sequentially without exposing its underlying representation.
+
+#MEMENTO:
+
+    In the Memento pattern, basically, we have the capture and externalization of an object's internal state,
+    allowing the object to be restored to this state later.
+
+
+#OBSERVER:
+
+    In the Observer pattern, basically, we have a one-to-many dependency between objects, where one object
+    changes its state, and all its dependents are notified and updated automatically.
+
+
+#STATE:
+
+    In the State pattern, basically, we have an object that changes its behavior when its internal state changes,
+    allowing an object to alter its behavior when its internal state changes.
+
+
+#STRATEGY:
+
+    In the Strategy pattern, basically, we have a family of algorithms encapsulated in separate classes, and
+    clients can choose an algorithm from the family to use dynamically.
+
+
+#TEMPLATE METHOD:
+
+    In the Template Method pattern, basically, we have a method in a superclass defining the skeleton of an
+    algorithm, allowing its subclasses to alter certain steps of the algorithm without changing its structure.
+
+
+#VISITOR:
+
+    In the Visitor pattern, basically, we have a way to define operations that can be performed on the elements of
+    an object structure without changing the classes on which they operate.
+
+#NULL OBJECT:
+
+    In the Null Object pattern, basically, we have an object that represents a do-nothing or
+    default behavior, allowing the elimination of null checks and providing a consistent interface.
+
+
+#######################################################################

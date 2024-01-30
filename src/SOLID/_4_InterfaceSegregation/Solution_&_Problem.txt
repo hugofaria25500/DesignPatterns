@@ -1,0 +1,19 @@
+*Problem Scenario:
+The Interface Segregation Principle (ISP) addresses situations where a class is forced to implement interfaces that
+contain methods irrelevant to its functionality. In larger interfaces, some classes may be required to implement
+methods that are not applicable to them, leading to unnecessary dependencies and potential code bloat. This violates
+the idea that clients should not be forced to depend on interfaces they do not use.
+
+*Solution:
+The solution proposed by the Interface Segregation Principle is to break down large interfaces into smaller, more
+specific ones, each catering to a distinct set of responsibilities. This allows classes to implement only the
+interfaces that are relevant to their functionality, preventing them from being burdened with unnecessary methods.
+By doing so, dependencies are reduced, and classes can be more finely tailored to their specific roles, promoting a
+more modular and maintainable codebase.
+
+*Conclusion:
+Implementing the Interface Segregation Principle leads to more flexible and modular software designs. It reduces the
+coupling between classes and interfaces, allowing each class to depend only on the functionality it needs. This
+results in cleaner and more maintainable code, as classes are not compelled to implement methods that are irrelevant
+to their purpose. The principle encourages the creation of cohesive interfaces, each representing a specific set of
+related functionality, contributing to a more scalable and adaptable software architecture.

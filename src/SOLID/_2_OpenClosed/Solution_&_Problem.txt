@@ -1,0 +1,19 @@
+*Problem Scenario:
+The Open-Closed Principle (OCP) addresses the challenge of extending the functionality of a system without modifying
+its existing code. In traditional systems, when new features or requirements arise, developers often need to modify
+existing classes, leading to potential side effects and increased code fragility. This violates the principle of
+maintaining a stable codebase while accommodating changes.
+
+*Solution:
+The Open-Closed Principle advocates that a class should be open for extension but closed for modification.
+This means that the behavior of a module can be extended without altering its source code. The solution lies in
+creating an architecture that allows for adding new functionality through the introduction of new classes, modules,
+or interfaces, rather than modifying existing ones. This is typically achieved through the use of abstraction,
+inheritance, and polymorphism.
+
+*Conclusion:
+By adhering to the Open-Closed Principle, software systems become more resilient to changes and easier to maintain.
+The principle encourages the creation of modular and flexible designs, enabling developers to add new features by
+introducing new classes or modules rather than modifying existing ones. This leads to a reduction in the risk of
+introducing bugs or unintended consequences when extending the system. Overall, OCP promotes a more scalable and
+adaptable software architecture, supporting the long-term evolution of a system in response to changing requirements.
