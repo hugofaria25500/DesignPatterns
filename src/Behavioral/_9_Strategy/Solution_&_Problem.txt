@@ -1,0 +1,28 @@
+*Problem Scenario:
+Imagine you are developing a payment processing system. The system currently supports only credit card payments,
+and the payment processing logic is tightly coupled within the main payment class. Now, you receive a requirement
+to add support for different payment methods like PayPal and Google Pay. If you attempt to extend the existing
+payment class for each new payment method, the code becomes cluttered and difficult to maintain. Additionally,
+adding a new payment method requires modifying the existing code, violating the open/closed principle.
+
+*Solution using Strategy Pattern:
+
+Strategy Interface:
+Create a PaymentStrategy interface that declares a method, e.g., processPayment, representing the strategy
+for processing payments.
+
+Concrete Strategies:
+Implement concrete strategy classes (CreditCardPaymentStrategy, PayPalPaymentStrategy, GooglePayPaymentStrategy)
+that implement the PaymentStrategy interface, each providing its implementation of the payment processing logic.
+
+Context (PaymentProcessor):
+Create a PaymentProcessor class (context) that contains a reference to a PaymentStrategy.
+The PaymentProcessor delegates the payment processing to the strategy.
+
+Client Code:
+In the client code, you can create an instance of PaymentProcessor and set the desired payment strategy dynamically.
+
+*Conclusion:
+The Strategy pattern allows you to encapsulate different payment algorithms, making it easier to add new payment
+methods without modifying the existing payment processing logic. It promotes code flexibility and adherence to the
+open/closed principle.

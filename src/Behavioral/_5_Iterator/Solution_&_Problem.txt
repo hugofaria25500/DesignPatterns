@@ -1,0 +1,29 @@
+*Problem Scenario:
+Imagine you are developing a system that manages a collection of books in a library. The books are stored in
+different sections (e.g., fiction, non-fiction, science, etc.), and you need to provide a way for clients to
+iterate over the books within a specific section. The client code should be able to iterate over the books without
+knowing the internal structure of the library.
+
+*Solution using Iterator Pattern:
+
+Iterator Interface:
+Create an Iterator interface that declares methods like hasNext and next to iterate over the collection of books.
+
+Concrete Iterator:
+Implement a concrete iterator class that implements the Iterator interface. This class will keep track of the
+current position within the collection and provide methods to move to the next book.
+
+Aggregate Interface:
+Create an Aggregate interface that declares a method to create an iterator for the collection.
+
+Concrete Aggregate:
+Implement a concrete aggregate class that implements the Aggregate interface. This class should provide
+the actual collection of books and a method to create an iterator for that collection.
+
+Client Code:
+The client code will create an instance of the concrete aggregate and use the iterator to iterate over the
+books without knowing the internal details of the collection.
+
+*Conclusion:
+The Iterator pattern allows you to decouple the traversal logic from the collection, making it easier to add new
+types of iterators or change the traversal algorithm without modifying the collection or the client code.

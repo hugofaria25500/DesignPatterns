@@ -1,0 +1,35 @@
+*Problem Scenario:
+Imagine you are developing a remote control system for various electronic devices (e.g., TVs, audio systems).
+Each device has different functionalities, and you want to implement a system that allows users to perform
+actions (e.g., turn on, turn off, change volume) on these devices. Without using the Command pattern, you might
+end up with a complex and tightly coupled system where the client directly interacts with each device, making it
+challenging to add new devices or actions without modifying existing code.
+
+*Solution using Command Pattern:
+
+Command Interface:
+Define a command interface (Command) that declares a method for executing the command.
+This represents the common interface for all commands that can be executed.
+
+Concrete Commands:
+Create concrete command classes (TurnOnCommand, TurnOffCommand, ChangeVolumeCommand) that implement
+the command interface.
+Each concrete command encapsulates a specific action to be performed on a device.
+
+Receiver:
+Create a receiver class (ElectronicDevice) that represents the electronic device on which the
+commands will be executed.
+The receiver contains methods corresponding to the actions that can be performed on the device.
+
+Invoker:
+Create an invoker class (RemoteControl) that holds and executes the commands.
+The invoker does not need to know the details of the concrete commands but simply invokes their execute method.
+
+Client Code:
+The client code creates commands, associates them with receivers, and configures the invoker.
+The client triggers the execution of commands through the invoker.
+
+*Conclusion:
+This approach allows you to decouple the sender of a request from its receiver, providing flexibility in
+configuring and executing different commands. The Command pattern promotes a more modular and extensible design for
+systems that involve command execution.

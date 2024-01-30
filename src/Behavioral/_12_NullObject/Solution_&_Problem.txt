@@ -1,0 +1,28 @@
+*Problem Scenario:
+Imagine you are developing a logging system for an application that logs various events, such as errors, warnings,
+and information messages. You have a Logger interface with multiple implementations, such as ErrorLogger,
+WarningLogger, and InfoLogger, each responsible for handling specific log levels.
+
+Now, there are situations where you want to disable logging temporarily or when a particular logger is not available.
+Without using the Null Object pattern, you might need to introduce conditional checks throughout your code to handle
+the case when logging is disabled or when a logger is not available. This leads to code that is cluttered with
+conditional statements, making it harder to read and maintain.
+
+*Solution using Null Object Pattern:
+
+Logger Interface:
+Create a Logger interface that declares a method, let's call it log, for logging events.
+
+Concrete Loggers (ErrorLogger, WarningLogger, InfoLogger):
+Implement concrete classes (ErrorLogger, WarningLogger, InfoLogger) that implement the Logger interface and
+provide specific implementations for handling different log levels.
+
+Null Logger:
+Introduce a special implementation of the Logger interface, let's call it NullLogger, that does nothing when the
+log method is called. This serves as a null object to represent a situation where logging is disabled or when a
+specific logger is not available.
+
+*Conclusion:
+The Null Object pattern helps avoid null checks in the client code, making it more readable and reducing the
+risk of null pointer exceptions. It provides a default, do-nothing implementation for cases where an object of a
+specific type is not available or not needed.

@@ -1,0 +1,23 @@
+*Problem Scenario:
+Imagine you are working on a graphics system that needs to represent complex shapes composed of simpler shapes.
+These shapes can include basic shapes like circles and rectangles, as well as composite shapes that consist of a
+combination of other shapes. Without using the Composite pattern, you might end up with a complex hierarchy of classes,
+making it difficult to treat individual shapes and compositions of shapes uniformly.
+
+*Solution using Composite Pattern:
+
+Component Interface:
+Define an interface (Shape) that declares the common operations for both leaf nodes and composite nodes.
+This represents the abstraction for all components in the hierarchy.
+
+Leaf Component:
+Create a leaf component class (e.g., Circle, Rectangle) that implements the component interface.
+These classes represent the individual shapes that do not have child components.
+
+Composite Component:
+Create a composite component class (e.g., CompositeShape) that implements the component interface.
+These classes represent compositions of shapes and can contain other leaf or composite components.
+
+*Conclusion:
+This approach allows you to treat individual shapes and compositions of shapes uniformly, simplifying the client code
+and providing a consistent interface for all components in the hierarchy.

@@ -1,0 +1,23 @@
+*Problem Scenario:
+Imagine you are developing a framework for building different types of reports. Each report may have a different
+structure, including a header, a body, and a footer. Initially, you create separate classes for each type of report
+(e.g., SalesReport, FinancialReport). However, as the number of report types grows, you realize that there is common
+behavior shared among them, such as generating a title and handling data formatting. If you continue creating separate
+classes for each report type without using the Template Method pattern, you may end up duplicating code and making the
+system hard to maintain.
+
+*Solution using Template Method Pattern:
+
+Abstract Class (ReportTemplate):
+Create an abstract class, ReportTemplate, that defines a template method (generateReport) with a sequence of steps for
+building a report. The template method can include abstract or hook methods that are implemented by concrete subclasses.
+
+Concrete Classes (SalesReport, FinancialReport):
+Implement concrete classes (SalesReport, FinancialReport) that extend the abstract class ReportTemplate.
+These classes provide specific implementations for the abstract or hook methods, allowing customization
+while reusing the common steps defined in the template method.
+
+*Conclusion:
+The Template Method pattern allows you to define the skeleton of an algorithm in the superclass but let subclasses
+alter specific steps of the algorithm without changing its structure. This promotes code reuse and flexibility in
+report generation without duplicating common steps across different report types.

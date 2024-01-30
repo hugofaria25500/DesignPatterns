@@ -1,0 +1,30 @@
+*Problem Scenario:
+Imagine you are developing a text editor application. Users can enter and edit text, and they have the ability
+to undo or redo changes. However, you want to implement the undo/redo functionality in a way that is not tightly
+coupled to the text editor's internal state. Without the Memento pattern, you might face challenges in managing the
+state history and providing a flexible undo/redo mechanism.
+
+*Solution using Memento Pattern:
+
+Originator Interface:
+Create an Originator interface that declares methods for saving and restoring its internal state.
+
+Concrete Originator:
+Implement a concrete originator class that implements the Originator interface. This class represents
+the text editor and contains the current text and other relevant state.
+
+Memento Interface:
+Create a Memento interface that represents a snapshot of the originator's state.
+
+Concrete Memento:
+Implement a concrete memento class that implements the Memento interface.
+This class stores the state of the text editor at a specific point in time.
+
+Caretaker:
+Create a Caretaker class that is responsible for keeping track of the history of states (mementos) and
+managing the undo and redo operations.
+
+*Conclusion:
+The Memento pattern allows you to implement the undo/redo functionality in a flexible and decoupled manner,
+ensuring that the text editor's internal state is not directly exposed to the undo/redo mechanism. The UndoManager
+keeps track of the history of states, and the TextEditor class provides methods to save and restore its state.

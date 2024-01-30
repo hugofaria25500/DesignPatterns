@@ -1,0 +1,13 @@
+*Problem Scenario:
+Imagine you have a system that frequently creates and destroys objects of a certain type, and the cost of creating these objects is high. Creating new instances every time they are needed can be inefficient and resource-intensive. An Object Pool can help in situations where reusing existing objects is more efficient than creating new ones.
+
+*Solution using Object Pool Pattern:
+
+Pooled Object:
+Create a class representing the object that will be managed by the pool.
+Implement methods for resetting the object's state before returning it to the pool.
+
+Object Pool:
+Create an object pool class that manages a collection of pooled objects.
+Initialize the pool with a predefined number of objects.
+Provide methods for acquiring and releasing objects.

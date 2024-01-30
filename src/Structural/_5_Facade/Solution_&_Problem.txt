@@ -1,0 +1,20 @@
+*Problem Scenario:
+Imagine you are working on a complex system that involves multiple subsystems, each with its own set of classes and
+functionalities. These subsystems may be tightly coupled, and the client code interacts with them directly.
+Without using the Facade pattern, the client code might become intricate, and any changes to the subsystems could
+have a cascading effect on the client code.
+
+*Solution using Facade Pattern:
+
+Subsystem Classes:
+Identify and create multiple subsystem classes that encapsulate different functionalities.
+These classes represent the individual components of the system.
+
+Facade Class:
+Create a facade class that provides a simplified interface for the client to interact with the subsystems.
+This class shields the client from the complexities of the subsystems and provides a unified interface.
+
+*Conclusion:
+This approach allows you to shield the client code from the complexities of the subsystems and provides a single entry
+ point for specific actions. The Facade pattern simplifies the usage of a complex system by offering a higher-level
+ interface to the client.

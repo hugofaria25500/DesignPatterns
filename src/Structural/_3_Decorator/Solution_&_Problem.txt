@@ -1,0 +1,32 @@
+*Problem Scenario:
+Imagine you have a system that involves creating different types of vehicles (e.g., Cars, Bicycles).
+You want to add additional features to these vehicles, such as GPS, Sunroof, or Electric Engine,
+but you want the flexibility to combine these features dynamically. Without using the Decorator pattern,
+you might end up with a large number of subclasses representing all possible combinations of features,
+leading to a complex and inflexible system.
+
+*Solution using Decorator Pattern:
+
+Component Interface:
+Define an interface (Vehicle) that represents the core functionality of the objects that can be decorated.
+This represents the base component that can have additional features.
+
+Concrete Component:
+Create concrete component classes (e.g., Car, Bicycle) that implement the component interface.
+These classes represent the base objects to which additional features can be added.
+
+Decorator Interface:
+Define a decorator interface (VehicleDecorator) that extends the component interface.
+This represents the interface for adding additional features.
+
+Concrete Decorators:
+Create concrete decorator classes (e.g., GPSDecorator, SunroofDecorator, ElectricEngineDecorator) that implement the decorator interface.
+These classes add specific features to the base objects.
+
+Client Code:
+Use the component interface to create and manipulate objects with different combinations of features.
+
+*Conclusion:
+This approach allows you to add new features to vehicles without modifying their base classes,
+promoting flexibility and maintainability. The client can create and manipulate objects with various
+combinations of features at runtime.

@@ -1,0 +1,12 @@
+*Problem Scenario:
+Imagine you have a class that is responsible for managing a shared resource or configuration settings. This class needs to be instantiated only once to ensure that all parts of the system access the same instance, preventing duplicated configurations or resource inconsistencies.
+
+*Solution using Singleton Pattern:
+
+Singleton Class:
+Create a class with a private constructor to prevent direct instantiation from outside the class.
+Provide a static method that allows access to the single instance of the class.
+
+Lazy Initialization (optional):
+Optionally, implement lazy initialization to create the instance only when it is first needed.
+Ensure thread safety to prevent issues in a multi-threaded environment.

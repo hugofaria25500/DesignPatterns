@@ -1,0 +1,31 @@
+*Problem Scenario:
+Imagine you are designing a smart home system where various devices (lights, thermostat, security cameras) need to
+interact with each other based on certain conditions or user actions. Without using the Mediator pattern,
+you might end up with a complex and tightly coupled system where each device directly communicates with other devices,
+making it challenging to add new devices or change the interaction logic without modifying existing code.
+
+*Solution using Mediator Pattern:
+
+Mediator Interface:
+Define a mediator interface (HomeAutomationMediator) that declares methods for communication between devices.
+This represents the common interface that devices will use to communicate through the mediator.
+
+Concrete Mediator:
+Create a concrete mediator class (SmartHomeMediator) that implements the mediator interface.
+The concrete mediator manages the interactions between devices and enforces the communication protocols.
+
+Colleague Interface:
+Define a colleague interface (Device) that declares methods for interacting with the mediator.
+This represents the common interface that all devices in the system will implement.
+
+Concrete Colleagues:
+Create concrete colleague classes (Light, Thermostat, SecurityCamera) that implement the colleague interface.
+Each concrete colleague class represents a specific device in the system.
+
+Client Code:
+The client code creates devices, associates them with the mediator, and triggers interactions through the mediator.
+
+*Conclusion:
+This approach allows you to design a smart home system where devices communicate through a central mediator,
+promoting a loosely coupled architecture. The Mediator pattern facilitates the addition of new devices or changes
+to the interaction logic without modifying existing code, making the system more modular and extensible.

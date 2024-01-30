@@ -1,0 +1,34 @@
+Problem Scenario:
+Imagine you are working on a text editor that needs to represent a large number of characters in a document.
+Each character has various properties (e.g., font, size, color), and creating a separate object for each character
+might lead to a significant memory overhead. Without using the Flyweight pattern, you might end up with a large number
+of similar character objects, consuming excessive memory.
+
+Solution using Flyweight Pattern:
+
+Flyweight Interface:
+Define a flyweight interface (CharacterFlyweight) that declares the common properties shared among multiple
+character objects.
+This represents the shared state that can be extrinsic (common) or intrinsic (unique) to the characters.
+
+Concrete Flyweight:
+Create a concrete flyweight class (ConcreteCharacterFlyweight) that implements the flyweight interface.
+This class represents the common state that can be shared among multiple character objects.
+
+Unshared Flyweight:
+Optionally, create an unshared flyweight class (UnsharedCharacterFlyweight) for state that cannot be shared
+among multiple character objects.
+This class represents state that is unique to a specific character.
+
+Flyweight Factory:
+Create a flyweight factory class (CharacterFlyweightFactory) that manages the creation and retrieval of
+flyweight objects.
+This class ensures that flyweight objects are shared when appropriate and creates new instances when necessary.
+
+Client Code:
+The client code represents the characters in the document by using the flyweight objects.
+
+*Conclusion:
+This approach allows you to represent a large number of characters efficiently by sharing common properties and
+creating new instances only when necessary. The Flyweight pattern helps reduce memory consumption and optimize
+performance in scenarios where objects share common state.

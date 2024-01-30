@@ -1,0 +1,26 @@
+*Problem Scenario:
+Imagine you are developing a weather monitoring system. The system needs to notify various displays
+(such as a temperature display, a humidity display, and a wind speed display) whenever the weather conditions change.
+Initially, you implement the weather monitoring system without the Observer pattern, using direct connections between
+the weather data and each display. As the system evolves, you find it challenging to add new displays or remove
+existing ones without modifying the core system code.
+
+*Solution using Observer Pattern:
+
+Subject Interface:
+Create a WeatherData interface (subject) that declares methods for registering, removing, and notifying observers.
+
+Observer Interface:
+Create a WeatherObserver interface that declares an update method to be implemented by concrete observers.
+
+Concrete Subject:
+Implement a WeatherStation class (concrete subject) that maintains the weather data and manages a list of
+registered observers.
+
+Concrete Observers:
+Implement concrete observer classes (TemperatureDisplay, HumidityDisplay, WindSpeedDisplay) that implement
+the WeatherObserver interface and define their specific behavior when the weather data changes.
+
+*Conclusion:
+The Observer pattern allows you to decouple the subject (weather data) from its observers (displays),
+making it easier to add new displays or remove existing ones without modifying the core weather monitoring system.

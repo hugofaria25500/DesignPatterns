@@ -1,0 +1,25 @@
+*Problem Scenario:
+Imagine you are working on an approval system where requests (e.g., purchase requests) need to go through multiple
+levels of approval. Each level of approval has a different authority and can approve or reject a request based on
+its own criteria. Without using the Chain of Responsibility pattern, you might end up with a monolithic structure
+where each approval level is tightly coupled, making it difficult to add or modify approval levels dynamically.
+
+*Solution using Chain of Responsibility Pattern:
+
+Handler Interface:
+Define a handler interface (Approver) that declares the common method for handling requests.
+This represents the common behavior that each handler in the chain must implement.
+
+Concrete Handlers:
+Create concrete handler classes (Manager, Director, VicePresident) that implement the handler interface.
+Each concrete handler represents an authority level and has the capability to handle or pass the request to
+the next handler in the chain.
+
+Client Code:
+The client code creates and assembles the chain of handlers.
+It initiates the request and passes it to the first handler in the chain.
+
+*Conclusion:
+This approach allows you to decouple the sender of a request from its receivers, providing a flexible way to handle
+requests dynamically based on their content or other criteria. The Chain of Responsibility pattern promotes
+flexibility and ease of extension in handling requests in a system.

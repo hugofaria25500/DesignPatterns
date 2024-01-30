@@ -1,0 +1,25 @@
+*Problem Scenario:
+Imagine you are developing a traffic light control system. The traffic light can be in different states such as
+"Red," "Yellow," and "Green." Initially, you implement the traffic light control using a set of conditional statements
+to manage the transitions between states. As the requirements evolve, you find that the code becomes complex and hard
+to maintain. Additionally, adding new states or modifying existing behavior becomes challenging.
+
+*Solution using State Pattern:
+
+Context Interface:
+Create a TrafficLight interface, which represents the context that can be in different states.
+
+State Interface:
+Create a LightState interface that declares methods representing the actions that can be performed in different states.
+
+Concrete States:
+Implement concrete state classes (RedState, YellowState, GreenState) that implement the LightState interface and
+define the behavior for each state.
+
+Context Implementation:
+Implement a TrafficLightController class that implements the TrafficLight interface. This class maintains a
+reference to the current state and delegates state-specific actions to the current state object.
+
+*Conclusion:
+The State pattern allows you to encapsulate the behavior associated with each state and makes it easier to add new
+states or modify existing behavior without modifying the context (traffic light controller) or other states.

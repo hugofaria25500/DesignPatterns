@@ -1,0 +1,23 @@
+*Problem Scenario:
+Imagine you are working on a system that involves loading and displaying images. Loading images from a remote server or a large database can be time-consuming, and you want to implement a mechanism to defer the loading of images until they are actually needed. Without using the Proxy pattern, you might end up loading all images eagerly, leading to unnecessary resource consumption and slower startup times.
+
+*Solution using Proxy Pattern:
+
+Subject Interface:
+Define a subject interface (Image) that declares the common operations for both real and proxy subjects.
+This represents the common functionality that the client expects.
+
+Real Subject:
+Create a real subject class (RealImage) that implements the subject interface.
+This class represents the actual object that the proxy will control access to.
+The real subject is responsible for the resource-intensive operations, such
+
+Proxy:
+Create a proxy class (ImageProxy) that implements the subject interface.
+This class controls access to the real subject and may perform additional tasks, such as loading the real
+subject on demand.
+The proxy may act as a placeholder for the real subject, allowing lazy loading.
+
+*Conclusion:
+This approach allows you to control access to the real subject, enabling lazy loading and improving performance by
+loading resources only when needed. The Proxy pattern helps manage resource-intensive operations more efficiently.
